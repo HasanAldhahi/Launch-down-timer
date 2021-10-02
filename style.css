@@ -1,0 +1,168 @@
+
+ /* Grayish blue: hsl(237, 18%, 59%)
+- Soft red: hsl(345, 95%, 68%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Dark desaturated blue: hsl(236, 21%, 26%)
+- Very dark blue: hsl(235, 16%, 14%)
+- Very dark (mostly black) blue: hsl(234, 17%, 12%) */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+body {
+    font-family: "Red Hat Text", sans-serif;
+    background-color:hsl(236, 21%, 26%);
+}
+
+.stars{
+    position: absolute;
+}
+
+
+.hills{
+    position: absolute;
+    bottom: 0;
+
+}
+
+.socials{
+    position: absolute;
+    bottom: 30px;
+    z-index: 999;
+
+    left: 50%;   
+    transform: translateX(-50%);
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    min-height: 70vh;
+} 
+
+.countDown{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap: wrap ;
+
+}
+
+.countDown h3 {
+    color: hsl(237,18%,59%);
+    text-transform: 2px;
+    font-size: 16px;
+    margin-top: 16px;
+
+
+
+
+}
+
+.countDown p {
+
+    padding: 20px;
+    background-color:  hsl(235, 16%, 14%);
+    border-radius: 5px;
+    color: hsl(345, 95%, 68%);
+    font-size: 46px
+
+
+}
+
+
+.container h1 {
+
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 35px ;
+    letter-spacing: 2px;
+    margin-top: 10px;
+
+}
+
+.countDown div{
+
+    margin: 10px;
+}
+
+.countDown div{
+
+    margin: 10px;
+}
+
+
+
+
+.socials ul {
+    display: flex;
+    list-style: none;
+
+
+}
+
+.socials ul li{
+
+    margin: 0px 20px;
+}
+
+
+
+
+
+@media(min-width: 1440px) {
+    .stars img, hills img{
+
+        width: 1600px;
+
+    }
+}
+@media(min-width: 1600px) {
+    .stars img, hills img{
+    
+    width: 1920px;
+    
+    }
+}
+
+@media(max-width: 500px){
+
+
+    .container{
+        max-width: auto;
+        padding: 0 20px;
+    }
+    .container h1{
+        text-align: center;
+    }
+
+
+}
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    bottom: 0;
+    color: white;
+}
+.attribution a {   
+    color: hsl(228, 45%, 44%); 
+    bottom: 0;
+}
